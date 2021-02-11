@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html id="01">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - DOM Events!</title>
+
+    <script>
+        function changeH1(qqnome){
+            let h1 = document.getElementsByTagName("h1")[0]
+            h1.innerText = qqnome.value;}
+
+        function hideH1(){
+            let h1 = document.getElementsByTagName("h1")[0]
+            h1.style.display = "none";
+        }
+
+    </script>
+
+    <style>
+        div{
+            display: inline-block;
+            padding: 20px;
+            font-size: 2rem;
+            background-color: cornflowerblue;
+            color: aliceblue;}
+    </style>
+
+</head>
+
+<body>
+    <h1>Click here!</h1>
+    
+    <div onclick="hideH1()">
+        Click
+    </div>
+</body>
+
+</html>
+
+
