@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html id="01">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is This?</title>
+</head>
+
+<body>
+   <h1 id="t1">title 01</h1>
+
+   <h2 id="t2">title 02</h2>
+
+   <script>
+       let t1 = document.getElementById("t1");
+       let t2 = document.getElementById("t2");
+
+       t1.onclick = ColocarEmMaiusculo;
+       t2.onclick = ColocarEmMaiusculo;
+
+       function ColocarEmMaiusculo(){
+           this.innerHTML = this.innerHTML.toUpperCase();}
+   </script>
+</body>
+
+</html>
+
+
