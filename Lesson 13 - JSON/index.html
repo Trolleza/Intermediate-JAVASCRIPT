@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html id="01">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON!</title>
+
+
+    <script>
+        let a = {
+            nome: "Igor",
+            nota: 8.5}
+        
+        let b = JSON.stringify(a)
+
+        let a2 = '{"nome": "fabio", "nota":7.9}';
+
+        let b2 = JSON.parse(a2)
+
+        console.log(a)
+        console.log(b)
+
+        console.log(a2)
+        console.log(b2)
+
+        console.log(b2.nome);
+        
+    </script>
+
+</head>
+
+<body>
+    
+</body>
+
+</html>
+
+
