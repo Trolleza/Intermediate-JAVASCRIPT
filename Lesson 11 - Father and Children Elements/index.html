@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html id="01">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Father and Sons Elements!</title>
+
+
+    <script>
+        window.onload = function(){
+            let h1 = document.getElementsByTagName("h1")
+            for( let h of h1){
+                console.log(h)
+
+                h.addEventListener("click", qop)}
+            
+            function qop(e){
+                let t = e.target;
+                console.log(t.parentElement)}}
+    </script>
+
+</head>
+
+<body>
+    <div  id ="d1">
+        <h1>Title</h1>
+        <p>Any Text</p>
+    </div>
+
+    <div  id ="d2">
+        <h1>Title 02</h1>
+        <p>Any Text 02</p>
+    </div>
+</body>
+
+</html>
+
+
