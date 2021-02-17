@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html id="01">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMER and INTERVAL!</title>
+
+    
+
+    <script>
+        var number = 0;
+
+        var timer;
+
+        function TextUpdate(){
+            let h = document.getElementsByTagName("h1")[0];
+            h.innerHTML += " " + number;
+            number++;}
+
+        function Start(){
+            timer = setTimeout(TextUpdate ,3000);}
+
+        function Stop(){
+            clearTimeout(timer);
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>Title</h1>
+    <input onclick="Start()" type="submit" value="Start">
+    <input onclick="Stop()" type="submit" value="Stop">
+</body>
+
+</html>
+
+
