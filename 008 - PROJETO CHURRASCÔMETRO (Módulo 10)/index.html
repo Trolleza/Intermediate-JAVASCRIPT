@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="shortcut icon" href="./Imagens/icons8-swine-80.png">
+    <title>Churrascômetro!</title>
+    <style>
+        @font-face {
+            font-family: JosefinSlab;
+            src: url(./Fonts/JosefinSlab.ttf);}
+        @font-face {
+            font-family: AkayaTelivigala;
+            src: url(./Fonts/AkayaTelivigala.ttf);}
+        @font-face {
+            font-family: CabinSketch;
+            src: url(./Fonts/CabinSketch.ttf);}
+    </style>
+</head>
+
+<body>
+    <div class="container">  
+        <div class="grid">
+            <!-- area do texto de imagem -->
+            <div class="text-content">
+                <h1>
+                    Calcule os suprimentos da sua festa!
+                </h1>
+                <img src="./Imagens/Lalala.png">
+            </div>
+            <!-- area de calculo -->
+            <div class="box-calculo">
+                <img src="./Imagens/Logoo 2.png">
+                <div class="form">
+                    <div class="input-block">
+                        <label for="adults">Number of Adults</label>
+                        <input id="adults" name="adults" type="number" placeholder="Adults">
+                    </div>
+                    <div class="input-block">
+                        <label for="kids">Number of Kids</label>
+                        <input id="kids" name="kids" type="number" placeholder="Kids">
+                    </div>
+                    <div class="input-block">
+                        <label for="duration">Duration Time</label>
+                        <input id="duration" name="duration" type="number" placeholder="Duration (h)">
+                    </div>
+                    <div class="input-block">
+                        <button onclick="calculate()">Calculate!</button>
+                    </div>
+                </div>
+                <div id="result">
+                </div>
+            </div>
+        </div>    
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
